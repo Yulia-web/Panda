@@ -1,0 +1,7 @@
+@mixin purple-gradient {
+    padding: 16px 32px;
+    background: linear-gradient(278.54deg, #6714EF 3.14%, #9F43F1 96.34%);
+    box-shadow: 1px 8px 32px rgba(101, 28, 206, 0.58);
+    border-radius: 87px;
+    color: $lightGray;
+}

@@ -1,0 +1,67 @@
+.baner {
+    display: flex;
+    gap: 160px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 0 150px;
+
+    .baner_content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .title {
+        position: relative;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 82px;
+        margin-bottom: 22px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: '@img/icons/purple_line.svg';
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            max-width: 270px;
+        }
+    }
+
+    .description {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        color: #00062F;
+        opacity: 0.8;
+        margin-bottom: 34px;
+    }
+
+    .learn_more {
+        @include purple-gradient;
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        border: none;
+    }
+
+    .banner_image {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: $pink;
+            top: -20px;
+            left: -50px;
+            z-index: -1;
+        }
+    }
+}
